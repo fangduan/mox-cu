@@ -8,4 +8,12 @@ prompt_live = false
 default_account_name = "anvil1"
 # unsafe_password_file
 
+[networks.anvil-zksync]
+url = "http://localhost:56320"
+chain_id = 260
+is_zksync = true
+save_to_db = false
+prompt_live = false
+default_account_name = "anvil1"
+
 # You can view all configuration options at https://cyfrin.github.io/moccasin/all_moccasin_toml_parameters.html

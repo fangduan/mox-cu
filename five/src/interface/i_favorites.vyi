@@ -1,0 +1,7 @@
+@external
+def store(favorite_number: uint256):
+    ...
+
+def retrieve() -> uint256: 
+    ...
+    

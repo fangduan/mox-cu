@@ -1,8 +1,10 @@
 from src import favorites
 from moccasin.boa_tools import VyperContract
+from moccasin.config import get_active_network
 
 def deploy_favorites() -> VyperContract:
     favorites_contract: VyperContract = favorites.deploy()
+    print(f"current network is {get_active_network().name}")
     starting_number: int = favorites_contract.retrieve()
     print(f"starting number {starting_number}")
 
@@ -13,3 +15,4 @@ def deploy_favorites() -> VyperContract:
 
 def moccasin_main():
     deploy_favorites()
+
