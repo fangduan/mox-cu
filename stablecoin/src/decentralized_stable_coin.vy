@@ -28,7 +28,3 @@ EIP_721_VERSION: constant(String[20]) = "1"
 def __init__():
     ow.__init__()
     erc20.__init__(NAME, SYMBOL, DECIMALS, NAME, EIP_721_VERSION)
-
-
-    
-
